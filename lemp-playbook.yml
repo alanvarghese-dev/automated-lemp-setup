@@ -1,0 +1,32 @@
+---
+- name: Install LEMP stack
+  hosts: LEMP_Servers
+  become: true
+  tasks:
+    - name: Update APT package index
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+    - name: Install MySQL Server
+      apt:
+        name: mysql-server
+        state: present
+    - name: Install PHP and PHP-FPM
+      apt:
+        name: 
+          - php-fpm
+          - php-mysql
+    - name: Ensure Nginx is started and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: true
+    - name: Ensure MySQL is started and enabled
+      service:
+        name: mysql
+        state: started
+        enabled: true
