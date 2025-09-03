@@ -1,15 +1,10 @@
-# 🚀 Automated LEMP Stack Deployment using Ansible on AWS
+ Automated LEMP Stack Deployment using Ansible on AWS.
 
-## 📘 Description
 
 This project demonstrates the automated deployment of a LEMP stack 
-— Linux, Nginx, MySQL, and PHP
-— on an AWS EC2 Ubuntu 24.04 instance using Ansible.
-This setup automates the provisioning and configuration of the web server, database, and PHP processor, and verifies functionality via a PHP info page.
+[Linux, Nginx, MySQL, and PHP] on an AWS EC2 Ubuntu 24.04 instance using Ansible.It automates the provisioning and configuration of the web server, database and PHP processor, and verifies its functionality via a PHP info page.
 
----
-
-## 🧰 Technologies Used
+Technologies Used
 
 | Component   | Tool/Service      |
 |------------|--------------------|
@@ -20,9 +15,8 @@ This setup automates the provisioning and configuration of the web server, datab
 | Automation | Ansible            |
 | Cloud      | AWS EC2            |
 
----
 
-## 📁 Project Structure
+ 📁 Project Structure
 
 
 automated-lemp-setup/
@@ -37,9 +31,7 @@ automated-lemp-setup/
 ├─phpinfo-confirmation.png
 
 
----
-
-## 🔧 Ansible Playbook (`lemp_playbook.yml`)
+🔧 Ansible Playbook (`lemp_playbook.yml`)
 
 ```yaml
 
@@ -113,15 +105,14 @@ automated-lemp-setup/
 
 ---
 
-## 🧪 Testing the Setup
+ 🧪 Testing the Setup
 
 Open your browser and visit: http://<your-ec2-public-ip>/phpinfo.php
 
 If PHP is configured correctly, you will see the PHP Info page.
 
----
 
-## 🧩 Troubleshooting Scenarios
+ 🧩 Troubleshooting Scenarios
 
 
 Issue	                               Solution
@@ -137,7 +128,7 @@ Issue	                               Solution
 5. Public IP changes after reboot	Use an Elastic IP to assign a permanent public IP to EC2
 
 
-## 📝 Notes
+ 📝 Tips
 
 
 * Always update and upgrade your instance before running Ansible playbooks.
@@ -150,12 +141,12 @@ Issue	                               Solution
 
 
 
-## ✅ Status
+ ✅ Status
 
 
 Project Name: Automated LEMP Stack Deployment using Ansible on AWS
 
-Status: ✅ Completed
+Status: Completed
 
 Type: Hybrid DevOps & Automation
 
